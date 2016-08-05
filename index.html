@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Calculates change for a sale">
+	<meta name="author" content="Vincent Duong">
+	<title>Change Calculator</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+<div class="col-sm-offset-2">
+	<div class="container"> <h1>Change Calculator</h1>
+		<form action="javascript:void(0);" class="container">
+			<div class="col-xs-4">
+				<label>How much is due for the sale?</label>
+				<input type="number" id="sale" step=0.01>
+			</div>
+			<div class="col-xs-4">
+				<label>How much has the customer given you?</label>
+				<input type="number" id="payment" step=0.01>
+			</div>
+			<button id="btnCalculate" 
+				class="btn btn-danger">
+				Calculate
+			</button>	
+		</form>
+	</div>
+
+
+	<div class="col-sm-offset-3">
+		<label class="output"><h2>Dollars</h2></label>
+		<p id="dollars"></p>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-2">
+			<label><h3>Quarters</h3></label>
+			<p id="quarters"></p>
+		</div>
+		<div class="col-xs-2">
+			<label><h3>Dimes</h3></label>
+			<p id="dimes"></p>
+		</div>
+		<div class="col-xs-2">
+			<label><h3>Nickels</h3></label>
+			<p id="nickels"></p>
+		</div>
+		<div class="col-xs-2">
+			<label><h3>Pennies</h3></label>
+			<p id="pennies"></p>
+		</div>
+	</div>
+</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
